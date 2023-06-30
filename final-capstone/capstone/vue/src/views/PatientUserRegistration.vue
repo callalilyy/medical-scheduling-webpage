@@ -78,7 +78,7 @@ export default {
                   authService.getRole(this.user.username).then(res=>{
                     const roles = res.data;
                     this.$store.commit("SET_ROLE", roles);
-                     console.log("login" + this.$store.state.role.role);
+                    
                   });
                   this.$router.push({
                     path: "/patient-account-creation",

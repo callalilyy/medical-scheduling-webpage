@@ -62,7 +62,7 @@ export default {
       
       await patientService.getPatientByUserId(this.userId).then(resp => {
         this.fetchPatient = resp.data
-        console.log(this.fetchPatient.dateOfBirth);
+        .log(this.fetchPatient.dateOfBirth);
       })
 
       this.fetchPatient.firstName = this.formData.firstName;
@@ -76,12 +76,11 @@ export default {
             this.$router.push({name: 'patientdash', params: {patientId: this.fetchPatient.patientId}});
           }
       })
-      
       }catch(error) {
-      console.log(error)
+       // Handle any errors that occur during the async calls
       }
      
-    },
+        },
     resetForm() {
       this.formData = {
       userId: null,

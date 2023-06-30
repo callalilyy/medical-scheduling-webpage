@@ -85,8 +85,7 @@ export default {
               .then(response => {
                 const roles = response.data;
                 this.$store.commit("SET_ROLE", roles);
-                console.log("login" +this.$store.state.role.role);
-                console.log(this.$store.state.role.role === 'ROLE_ADMIN');
+                
               });
 
             

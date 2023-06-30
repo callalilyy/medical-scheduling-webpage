@@ -162,7 +162,7 @@ export default {
       const selectedTime = this.selectedDate.getTime() + n * 30 * 60 * 1000;
       this.selectedDateTime = new Date(selectedTime);
       this.selectedSlot = n;
-      console.log(this.selectedDateTime);
+   
     },
     showSubmitButton() {
       this.readyToSubmit = true;
@@ -188,7 +188,7 @@ export default {
         }
       }).catch(error => {
         alert("Could not book appointment")
-        console.error(error)
+        .error(error)
       })
     },
   },

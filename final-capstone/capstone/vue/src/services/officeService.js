@@ -3,7 +3,7 @@ import axios from 'axios';
 export default {
 
     getAllOffices(){
-        console.log(axios.get('/offices'));
+        
         return axios.get('/offices');
     },
 
@@ -23,7 +23,7 @@ export default {
     },
 
     getOfficeHours(officeId){
-        console.log(axios.get(`/offices/office-hours/${officeId}`))
+      
         return axios.get(`/offices/office-hours/${officeId}`)
     },
     updateOfficeHours(officeHours){
@@ -31,7 +31,7 @@ export default {
     },
 
     getDoctors(officeId){
-        console.log(axios.get(`/providers/offices/${officeId}`))
+       
         return axios.get(`/providers/offices/${officeId}`)
     },
 

@@ -92,8 +92,7 @@ export default {
                   authService.getRole(this.user.username).then((response) => {
                     const roles = response.data;
                     this.$store.commit("SET_ROLE", roles);
-                    console.log("login" + this.$store.state.role.role);
-                    console.log(this.$store.state.role.role === "ROLE_ADMIN");
+                    
                   });
                   this.$router.push({
                     path: "/doctor-account-creation",
