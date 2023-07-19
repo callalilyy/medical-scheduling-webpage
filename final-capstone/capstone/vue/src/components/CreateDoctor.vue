@@ -62,7 +62,7 @@ export default {
     })
        } catch (error) {
     // Handle any errors that occur during the async calls
-    console.error(error);
+    
   }
    
     },

@@ -130,7 +130,7 @@ export default new Vuex.Store({
 ​
 When you reach the `/login` route, you'll see a bare login page. This is intentional. It's up to you to style this page to fit within your application.
 ​
-When you fill in a username and password and click the "Sign In" button, the method `login()` is called. The `login()` method uses the `/src/services/AuthService.js` to send a `POST` request to your API's `/login` route.
+When you fill in a username and password and click the "Sign In" button, the method `login()` is called. The `login()` method uses the `/src/services/authService.js` to send a `POST` request to your API's `/login` route.
 ​
 If you look at `AuthService`, you'll notice that there's no base URL set for Axios:
 ​
@@ -221,7 +221,7 @@ mutations: {
 ​
 When you reach the `/register` route, you'll see a bare registration page. Like the login page, this is intentional. You'll need to style this page to fit within your application.
 ​
-When you fill in a username, password, confirm the password role, and click the "Create Account" button, the method `register()` is called. This calls the `register()` method in `/src/services/AuthService.js`. This passes  your user details to your back-end application's REST API to create a new user:
+When you fill in a username, password, confirm the password role, and click the "Create Account" button, the method `register()` is called. This calls the `register()` method in `/src/services/authService.js`. This passes  your user details to your back-end application's REST API to create a new user:
 ​
 ```js
 methods: {
